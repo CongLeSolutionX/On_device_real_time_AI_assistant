@@ -302,9 +302,9 @@ pie
 
 ## Code Implementation
 
-The full codebase (including SwiftUI, AVFoundation integration, Core ML/local model wrapper usage, and supporting scripts) is available in the [Ask a Le GitHub repo](https://github.com/congleai/Ask-a-Le).
+The full codebase (including SwiftUI, AVFoundation integration, Core ML/local model wrapper usage, and supporting scripts) is available in the [Ask a Le GitHub repo](https://github.com/CongLeSolutionX/Ask-a-Le).
 
-- 📦 **Repository:** [github.com/congleai/Ask-a-Le](https://github.com/congleai/Ask-a-Le)
+- 📦 **Repository:** [github.com/CongLeSolutionX/Ask-a-Le](https://github.com/CongLeSolutionX/Ask-a-Le)
 - 📝 Includes: iOS app source code, model loading/inference, dataset scripts, and setup instructions.
 
 ---
