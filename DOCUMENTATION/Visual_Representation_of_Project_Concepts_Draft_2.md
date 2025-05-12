@@ -82,7 +82,7 @@ All translation and inference occur locally on the iOS device. User voice is pro
 
 ```mermaid
 ---
-title: "CHANGE_ME_DADDY"
+title: "Project Methodology & Phase Timeline"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY 4.0"
