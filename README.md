@@ -230,7 +230,7 @@ flowchart TD
 
 ```mermaid
 ---
-title: "Development Timeline"
+title: "Project Methodology & Phase Timeline"
 author: "Cong Le"
 version: "1.0"
 license(s): "MIT, CC BY 4.0"
@@ -244,12 +244,12 @@ config:
     'gantt': { 'htmlLabels': false},
     'fontFamily': 'Monaco',
     'themeVariables': {
-      'primaryColor': '#D29',
+      'primaryColor': '#F2E9',
       'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
-      'secondaryColor': '#EEF0',
-      'secondaryTextColor': '#6C3483',
+      'secondaryColor': '#EBDEF0',
+      'secondaryTextColor': '#DD99',
       'secondaryBorderColor': '#A569BD',
       'fontSize': '15px'
     }
