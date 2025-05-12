@@ -52,7 +52,7 @@ config:
       'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
-      'secondaryColor': '#EBDEF0',
+      'secondaryColor': '#EEF0',
       'secondaryTextColor': '#6C3483',
       'secondaryBorderColor': '#A569BD',
       'fontSize': '15px'
@@ -60,7 +60,9 @@ config:
   }
 }%%
 flowchart TD
-    A["User Voice Input"] --> B("AVFoundation <br/>- Audio Capture")
+  My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/Designing_graphic_syntax/MY_MEME/My-meme-icon-design.png", label: "User Voice Input", pos: "b", w: 100, h: 100, constraint: "on" }
+
+    My_Meme --> B("AVFoundation <br/>- Audio Capture")
     B --> C("Native iOS Speech-to-Text")
     C --> D{"Text Input<br/>(Vietnamese)"}
     D --> E("Core ML /<br/>Local LLM Wrapper")
@@ -99,7 +101,7 @@ flowchart TD
    class J framework
 
    classDef inputoutput fill:#f21c2,stroke:#333,stroke-width:2px
-   class A inputoutput
+   class My_Meme inputoutput
    class D inputoutput
    class H inputoutput
    class K inputoutput
