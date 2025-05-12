@@ -19,9 +19,6 @@ copyright: Copyright (c) 2025 Cong Le. All Rights Reserved.
 > 2. **Creative Commons Attribution 4.0 International License (CC BY 4.0):** Applies to all non-code content, including text, explanations, diagrams, and illustrations.
 ---
 
-
-# Visual Representation of Project Concepts
-
 Based on the comprehensive LaTeX document detailing the project "Privacy-Preserving Real-Time Vietnamese-English Translation on iOS using Edge AI," the following diagrams provide visual representations of the core architecture, model rationale, development process, and related aspects.
 
 
