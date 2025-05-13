@@ -200,8 +200,9 @@ config:
       'primaryColor': '#22BB',
       'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
+      'textColor': '#22F829',
       'primaryBorderColor': '#27AE60',
-      'secondaryColor': '#EBDEF0',
+      'secondaryColor': '#E222',
       'secondaryTextColor': '#6C3483',
       'secondaryBorderColor': '#A569BD',
       'fontSize': '15px'
@@ -217,12 +218,13 @@ flowchart LR
     style B fill:#fd22,stroke:#f2f,stroke-width:2px
     style D fill:#e373
     
-    subgraph Alt
+    subgraph Alternative_Option["Alternative Option"]
+    style Alternative_Option fill:#2FB2,stroke:#3e3c
         E["Edge AI On-Device"]
         E -.->|No External Data| F["Local Model/Processing"]
         F -.->|Private| G["Secure Result"]
     end
-    style F fill:#c8e6c9,stroke:#388e3c
+    style F fill:#c6c9,stroke:#3e3c
 ```
 
 **Explanation:**  
@@ -413,7 +415,7 @@ config:
       'primaryTextColor': '#F8B229',
       'lineColor': '#F8B229',
       'primaryBorderColor': '#27AE60',
-      'secondaryColor': '#EBDEF0',
+      'secondaryColor': '#DEF2',
       'secondaryTextColor': '#6C3483',
       'secondaryBorderColor': '#A569BD',
       'fontSize': '15px'
