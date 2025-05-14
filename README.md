@@ -1,4 +1,4 @@
-# Privacy-Preserving Real-Time Vietnamese-English Translation on iOS Using Edge AI 
+# Privacy-Preserving Real-Time Vietnamese-English Translation on iOS Using Edge AI
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 <!-- Optional: Add a badge for "Exploration Status: Ongoing" or similar -->
 
@@ -9,7 +9,19 @@
 
 ## Overview
 
-This project implements a **fully offline, privacy-focused, real-time Vietnamese-English Neural Machine Translation (NMT) system** for iOS devices. By leveraging the efficient and open-source [TinyLlama 1.1B Chat v1.0](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0) LLM, quantized and deployed in the [GGUF format](https://github.com/ggerganov/llama.cpp), it realizes edge AI translation with **no user data ever leaving the device**. The prototype integrates AVFoundation for voice input/output, Core ML and a local LLM wrapper for on-device inference, and SwiftUI for a seamless app experience.  
+This project implements a **fully offline, privacy-focused, real-time Vietnamese-English Neural Machine Translation (NMT) system** for iOS devices. By leveraging the efficient and open-source [TinyLlama 1.1B Chat v1.0](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0) LLM, quantized and deployed in the [GGUF format](https://github.com/ggerganov/llama.cpp), it realizes edge AI translation with **no user data ever leaving the device**. The prototype integrates AVFoundation for voice input/output, Core ML and a local LLM wrapper for on-device inference, and SwiftUI for a seamless app experience.
+
+---
+
+## Research Paper
+
+This project is documented in detail in our arXiv publication. For a comprehensive understanding of the methodology, experiments, and findings, please refer to:
+
+📄 **Privacy-Preserving Real-Time Vietnamese-English Translation on iOS Devices Using Edge AI and On-Device LLMs**
+
+*   **arXiv Abstract & PDF:** [arXiv:2505.07583](https://arxiv.org/abs/2505.07583)
+*   **Direct HTML View:** [Read Online (HTML)](https://arxiv.org/html/2505.07583v1)
+*   [![arXiv](https://img.shields.io/badge/arXiv-2505.07583-b31b1b.svg)](https://arxiv.org/abs/2505.07583)
 
 ---
 
@@ -17,6 +29,7 @@ This project implements a **fully offline, privacy-focused, real-time Vietnamese
 
 - [Privacy-Preserving Real-Time Vietnamese-English Translation on iOS Using Edge AI](#privacy-preserving-real-time-vietnamese-english-translation-on-ios-using-edge-ai)
   - [Overview](#overview)
+  - [Research Paper](#research-paper)
   - [Table of Contents](#table-of-contents)
   - [Key Features](#key-features)
   - [Project Rationale](#project-rationale)
@@ -55,7 +68,7 @@ Existing translation apps are either:
 - **Cloud-based:** Raise privacy concerns and need internet connectivity.
 - **Local but basic:** Limited language or use rule-based/statistical methods—lagging in quality.
 
-**This project delivers:**  
+**This project delivers:**
 - Quality, privacy, and reliability with advanced neural models directly on consumer devices.
 
 ---
@@ -99,29 +112,29 @@ flowchart TD
     B --> C["TinyLlama NMT Model<br/>(Q4_K_M, GGUF)"]
     C --> D["SwiftUI UI"]
     D --> E["Text-to-Speech<br/>(Optional)"]
-    
+
 ```
 
-- **All steps local.**  
+- **All steps local.**
 - **No external data flow.**
 
 ---
 
 ## Technical Stack
 
-- **Model Training / Prep:**  
+- **Model Training / Prep:**
     - Python, PyTorch, HuggingFace Transformers
     - Quantization toolkit (GGUF)
     - BLEU evaluation, data cleaning scripts
     - Public datasets: WMT, OPUS, IWSLT, UIT-ViEn
 
-- **iOS Development:**  
+- **iOS Development:**
     - Xcode, Swift, SwiftUI
     - AVFoundation (STT, TTS)
     - Core ML and/or local LLM wrapper for inference
     - Combine framework for reactive data flow
 
-- **Testing:**  
+- **Testing:**
     - Modern iPhone devices (A15 Bionic+)
     - Empirical latency & BLEU
     - Usability feedback
@@ -131,13 +144,13 @@ flowchart TD
 
 ## Model Workflow
 
-1. **Model Selection:**  
+1. **Model Selection:**
    - Lightweight, conversational LLM (TinyLlama 1.1B) fine-tuned on dialogue.
-2. **Quantization:**  
+2. **Quantization:**
    - GGUF format, Q4_K_M level (4-bit), balances size and performance.
-3. **Deployment:**  
+3. **Deployment:**
    - Model embedded and loaded within the iOS app via suitable wrapper.
-4. **End-to-End Pipeline:**  
+4. **End-to-End Pipeline:**
    - Record audio → STT → Input to NMT → Output translation (UI + TTS).
 
 ---
@@ -215,13 +228,13 @@ config:
 }%%
 flowchart TD
 	My_Meme@{ img: "https://raw.githubusercontent.com/CongLeSolutionX/MY_GRAPHIC_ASSETS/refs/heads/Designing_graphic_syntax/MY_MEME/My-meme-icon-design.png", label: "User Audio", pos: "b", w: 100, h: 100, constraint: "on" }
-	
+
     My_Meme --> AB["iOS App<br/>(UI)"]
     AB --> AC["AVFoundation: STT"]
     AC --> AD["TinyLlama<br/>(GGUF, Q4_K_M)"]
     AD --> AE["UI Output"]
     AE --> AF["AVFoundation: TTS<br/>(optional)"]
-    
+
 ```
 
 
@@ -310,6 +323,11 @@ The full codebase (including SwiftUI, AVFoundation integration, Core ML/local mo
 
 ## Citation & References
 
+If you utilize this project or its findings in your research, please cite our paper:
+
+- Le, C. (2025). *Privacy-Preserving Real-Time Vietnamese-English Translation on iOS Devices Using Edge AI and On-Device LLMs*. arXiv preprint arXiv:2505.07583. Available at: [https://arxiv.org/abs/2505.07583](https://arxiv.org/abs/2505.07583)
+
+**Key Technologies, Frameworks & Datasets Mentioned:**
 - [TinyLlama-1.1B-Chat-v1.0](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
 - [TheBloke: GGUF Quantized Models](https://huggingface.co/TheBloke/)
 - [Core ML Documentation](https://developer.apple.com/documentation/coreml)
@@ -318,26 +336,25 @@ The full codebase (including SwiftUI, AVFoundation integration, Core ML/local mo
 - [llama.cpp GGUF Format](https://github.com/ggerganov/llama.cpp)
 - [OPUS Parallel Corpus](https://opus.nlpl.eu/)
 - [WMT Shared Task](https://www.statmt.org/wmt23/translation-task.html)
-- …see full paper for details.
 
 ---
 
 ## License
 
-See [LICENSE](./LICENSE) for terms.  
+See [LICENSE](./LICENSE) for terms.
 Model license: [TinyLlama License](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
 
 ---
 
 ## Contact
 
-**Primary Author:** Cong Le  
-**Advisor:** Dr. Ning Chen  
+**Primary Author:** Cong Le
+**Advisor:** Dr. Ning Chen
 Department of Computer Science, California State University, Fullerton
 
 ---
 
-<!-- 
+<!--
 ```mermaid
 %% Current Mermaid version
 info
@@ -384,3 +401,4 @@ My_Meme ~~~ Closing_quote
 > *This project is a research proof-of-concept.*
 > *For academic or experimental use only.*
 ---
+
