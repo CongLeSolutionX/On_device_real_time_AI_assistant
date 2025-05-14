@@ -1,6 +1,5 @@
 # Privacy-Preserving Real-Time Vietnamese-English Translation on iOS Using Edge AI 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](LICENSE-CC-BY)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 <!-- Optional: Add a badge for "Exploration Status: Ongoing" or similar -->
 
 >Copyright (c) 2025 Cong Le. All Rights Reserved.
