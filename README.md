@@ -349,6 +349,7 @@ Model license: [TinyLlama License](https://huggingface.co/TinyLlama/TinyLlama-1.
 ## Contact
 
 **Primary Author:** Cong Le
+
 **Advisor:** Dr. Ning Chen
 Department of Computer Science, California State University, Fullerton
 
