@@ -393,7 +393,7 @@ flowchart LR
 
     Closing_quote@{ shape: braces, label: "With the right context,<br/>theory become reality" }
 
-    Link_to_my_profile{{"<a href='https://github.com/CongLeSolutionX/CongLeSolutionX' target='_blank'>Click here if you care about my profile</a>"}}
+    Link_to_my_profile{{"<a href='https://github.com/CongLeSolutionX' target='_blank'>Click here if you care about my profile</a>"}}
 
 Closing_quote ~~~ My_Meme
 My_Meme animatingEdge@--> Link_to_my_profile
