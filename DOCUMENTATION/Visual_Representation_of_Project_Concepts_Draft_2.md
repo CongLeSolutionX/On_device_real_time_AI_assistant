@@ -367,11 +367,14 @@ config:
 }%%
 sequenceDiagram
     actor User as User
-    participant UI as SwiftUI
-    participant Audio as AVFoundation
-    participant STT as Speech-to-Text
-    participant NMT as TinyLlama Q4K_M Wrapper
-    participant TTS as Text-to-Speech
+
+	box rgb(202, 12, 22, 0.1) The App System
+    	participant UI as SwiftUI
+    	participant Audio as AVFoundation
+    	participant STT as Speech-to-Text
+    	participant NMT as TinyLlama Q4K_M Wrapper
+    	participant TTS as Text-to-Speech
+	end
 
     User->>UI: Tap Microphone/Start
     UI->>Audio: Start Recording
