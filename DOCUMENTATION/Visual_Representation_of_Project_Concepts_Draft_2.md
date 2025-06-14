@@ -297,20 +297,20 @@ config:
   }
 }%%
 mindmap
-  root((iOS Translation App Technical Stack))
-    Model_Development
+  root)"iOS Translation App Technical Stack"(
+    Model_Development))"Model Development"((
       Python
       PyTorch
       HuggingFace_Transformers
       Quantization_Toolkits
-    Data_Prep
+    Data_Prep))"Data Prep"((
       WMT
       OPUS
       IWSLT
       UIT-ViEn
       BPE_Tokenization
       Cleaning_Scripts
-    App_Dev
+    App_Dev))"App Dev"((
       Xcode
       Swift
       SwiftUI
@@ -318,12 +318,12 @@ mindmap
       CoreML
       Combine
       LLM_Wrapper
-    Testing
+    Testing))"Testing"((
       iPhone_with_A15_or_newer
       Usability_Testers
       BLEU_Scores
       Real-Device_Latency
-    Collaboration
+    Collaboration))"Collaboration"((
       Faculty_Advisor
       NLP_Research_Groups
 ```
